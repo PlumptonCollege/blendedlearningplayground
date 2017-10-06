@@ -6,5 +6,13 @@ margin:0;
 #box 1 {
   
   float:Left;
+  width:400px;
+  height:300px;
+  -webkit-border-radius: 50px 41px 99px 0px;
+  -moz-border-radius: 50px 41px 99px 0px;border-radius:
+    50px 41px 99px 0px;background:rgba(227,162,11,0.8);
+  -webkit-box-shadow: #B3B3B3 40px 40px 40px;
+  -moz-box-shadow: #B3B3B3 40px 40px 40px;
+  box-shadow: #B3B3B3 40px 40px 40px;
 
 }
