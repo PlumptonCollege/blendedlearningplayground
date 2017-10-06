@@ -4,21 +4,369 @@ body {
   text-align: center;
   font-family:'Open Sans', Arial, sans-serif;
   font-size:13px;
+  background:white;
 }
 
-.header, .footer, .cards {
+.header, .footer, .cards, .filters {
   max-width:900px;
   text-align:left;
+  margin:0 auto 0 auto;
+  clear:both;
+  overflow:auto;
 }
 
 
 
+.filters {
+  margin:2rem auto 2rem auto;
+  text-align: center;
+  
+}
+.filters__section {
+  margin:0.5em 0 0.5em 0;
+}
+a.filters__filter {
+  border-radius:1em;
+  display:inline-block;
+  background-color:#f7f7f7;
+  padding:0.35em 1em 0.35em 1em;
+  color:#222;
+  font-size:0.9em;
+  text-decoration: none;
+}
+
+a.filters__filter:hover {
+  background:#f0f0f0;
+}
+a.filters__filter.is-active, a.filters__filter.is-active:hover {
+  background:#000;
+  color:white;
+}
+
+.filters__label {
+font-size:0.9em;
+ display:inline-block;
+ font-weight:700;
+ padding:0.35em 1em 0.35em 1em;
+}
+
+.cards {
+  margin:2rem auto 2rem auto;
+  overflow:auto;
+}
 
 
-.footer__partner {
-  width:15%;
-  padding:0 1% 0 1%:
+.card {
+  width:12.6%;
   display:block;
   float:left;
+  text-align: left;
+  //background:white;
+  //padding:1em;
+  box-sizing: border-box;
+  //box-shadow: 0 0 1em rgba(0,0,0,0.25);
+  margin:2%;
+  font-size:1em;
+}
+.card img {
+  width:100%;
+  float:left;
+  display:block;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(0,0,0,0.25);
+  
+}
+.card h2 {
+  padding:0.5rem 0 0 0;
+  margin:0;
+  clear:both;
+  font-size:1em;
+}
+.card p {
+  margin:0;
+  padding:0 0 0.5rem 0;
+}
+.card a,.card a:link, .card a:visited, .card a:active, .card a:hover {
+  color:#000;
+  text-decoration: none;
 }
 
+
+
+
+
+
+
+.header__logo {
+  width:8em;
+  float:left;
+  margin-top:0.5rem;
+  margin-right:1rem;
+}
+.header__title {
+
+}
+.header__subtitle {
+
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer__partner {
+  width:10%;
+  padding:0 2.5% 0 2.5%;
+  display:inline-block;
+}
+
+.footer__copyright {
+  clear:both;
+  display: block;
+  padding:2em 0 2em 0;
+}
+
+
+
+
+
+
+
+
+/* --------------------- General --------------------- */
+
+.cards .card {
+  display:block;
+}
+
+
+
+
+
+
+/* --------------------- Hardware --------------------- */
+
+.cards.desktop .card.phone,
+.cards.desktop .card.tablet,
+.cards.desktop .card.presentation,
+.cards.desktop .card.browser {
+  display:none;
+}
+.cards.desktop .card.phone.desktop ,
+.cards.desktop .card.tablet.desktop ,
+.cards.desktop .card.presentation.desktop ,
+.cards.desktop .card.browser.desktop  {
+  display:block;
+}
+.cards.phone .card.desktop,
+.cards.phone .card.tablet,
+.cards.phone .card.presentation,
+.cards.phone .card.browser {
+  display:none;
+}
+.cards.phone .card.desktop.phone,
+.cards.phone .card.tablet.phone,
+.cards.phone .card.presentation.phone,
+.cards.phone .card.browser.phone {
+  display:block;
+}
+.cards.tablet .card.phone,
+.cards.tablet .card.desktop,
+.cards.tablet .card.presentation,
+.cards.tablet .card.browser {
+  display:none;
+}
+.cards.tablet .card.phone.tablet,
+.cards.tablet .card.desktop.tablet,
+.cards.tablet .card.presentation.tablet,
+.cards.tablet .card.browser.tablet {
+  display:block;
+}
+.cards.presentation .card.phone,
+.cards.presentation .card.tablet,
+.cards.presentation .card.desktop,
+.cards.presentation .card.browser {
+  display:none;
+}
+.cards.presentation .card.phone.presentation,
+.cards.presentation .card.tablet.presentation,
+.cards.presentation .card.desktop.presentation,
+.cards.presentation .card.browser.presentation {
+  display:block;
+}
+.cards.browser .card.phone,
+.cards.browser .card.tablet,
+.cards.browser .card.desktop,
+.cards.browser .card.presentation {
+  display:none;
+}
+.cards.browser .card.phone.browser,
+.cards.browser .card.tablet.browser,
+.cards.browser .card.desktop.browser,
+.cards.browser .card.presentation.browser {
+  display:block;
+}
+.cards.all-hardware .card {
+  display:block;
+}
+
+
+
+
+/* --------------------- Blooms --------------------- */
+
+.cards.remember .card.apply,
+.cards.remember .card.analyse,
+.cards.remember .card.evaluate,
+.cards.remember .card.understand,
+.cards.remember .card.create {
+  display:none !important;
+}
+.cards.understand .card.remember,
+.cards.understand .card.apply,
+.cards.understand .card.analyse,
+.cards.understand .card.evaluate,
+.cards.understand .card.create {
+  display:none !important;
+}
+.cards.apply .card.remember,
+.cards.apply .card.analyse,
+.cards.apply .card.evaluate,
+.cards.apply .card.understand,
+.cards.apply .card.create {
+  display:none !important;
+}
+.cards.analyse .card.remember,
+.cards.analyse .card.apply,
+.cards.analyse .card.evaluate,
+.cards.analyse .card.understand,
+.cards.analyse .card.create {
+  display:none !important;
+}
+.cards.evaluate .card.remember,
+.cards.evaluate .card.apply,
+.cards.evaluate .card.analyse,
+.cards.evaluate .card.understand,
+.cards.evaluate .card.create {
+  display:none !important;
+}
+.cards.create .card.remember,
+.cards.create .card.apply,
+.cards.create .card.evaluate,
+.cards.create .card.analyse,
+.cards.create .card.understand {
+  display:none !important;
+}
+
+/*
+
+.cards.remember .card.apply.remember,
+.cards.remember .card.analyse.remember,
+.cards.remember .card.evaluate.remember,
+.cards.remember .card.understand.remember,
+.cards.remember .card.create.remember {
+  display:block;
+}
+.cards.understand .card.remember.understand,
+.cards.understand .card.apply.understand,
+.cards.understand .card.analyse.understand,
+.cards.understand .card.evaluate.understand,
+.cards.understand .card.create.understand {
+  display:block;
+},
+.cards.apply .card.remember.apply,
+.cards.apply .card.analyse.apply,
+.cards.apply .card.evaluate.apply,
+.cards.apply .card.understand.apply,
+.cards.apply .card.create.apply {
+  display:block;
+}
+.cards.analyse .card.remember.analyse,
+.cards.analyse .card.apply.analyse,
+.cards.analyse .card.evaluate.analyse,
+.cards.analyse .card.understand.analyse,
+.cards.analyse .card.create.analyse {
+  display:block;
+}
+.cards.evaluate .card.remember.evaluate,
+.cards.evaluate .card.apply.evaluate,
+.cards.evaluate .card.analyse.evaluate,
+.cards.evaluate .card.understand.evaluate,
+.cards.evaluate .card.create.evaluate {
+  display:block;
+}
+.cards.create .card.understand.create,
+.cards.create .card.remember.create,
+.cards.create .card.apply.create,
+.cards.create .card.evaluate.create,
+.cards.create .card.analyse.create {
+  display:block;
+}
+*/
+
+.cards.all-blooms .card {
+  display:block;
+}
+
+
+
+
+
+
+
+
+/* --------------------- General --------------------- */
+
+.cards.articles .card.tools,
+.cards.articles .card.training {
+  display:none !important;
+}
+.cards.tools .card.articles,
+.cards.tools .card.training {
+  display:none !important;
+}
+.cards.training .card.articles,
+.cards.training .card.tools {
+  display:none !important;
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.card {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
