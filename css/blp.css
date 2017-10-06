@@ -1,6 +1,15 @@
 body {
-padding:0;
-margin:0;
+  padding:0;
+  margin:0;
+  text-align: center;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size:13px;
 }
+
+.header, .footer, .cards {
+  max-width:900px;
+  text-align:left;
+}
+
 
 
