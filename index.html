@@ -3,32 +3,114 @@
 <head>
   <title>Blended Learning Playground</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/blp.css?cache=123" />
+  <link rel="stylesheet" href="css/blp.css" />
 </head>
   
 <body>
   
   <header class="header">
      <img class="header__logo" src="img/example.jpg" />
-     <h1 class="header__title">Blended Learing Playground</h2>
+     <h1 class="header__title">Blended Learning Playground</h2>
      <h2 class="header__subtitle">Site Tagline</h2>
-     <div class="header__filters">
-       Filters go here
-     </div>
   </header>
+
+  <nav class="filters">
+       <div class="filters__section">
+        <span class="filters__label">Type:</span>
+        <a class="filters__filter is-active" data-filter="tools" href="javascript:;">Tools</a>
+        <a class="filters__filter" data-filter="training" href="javascript:;">Training</a>
+        <a class="filters__filter" data-filter="articles" href="javascript:;">Articles</a> 
+       </div>
+       <div class="filters__section">
+        <span class="filters__label">Hardware:</span>
+        <a class="filters__filter is-active" data-filter="all-hardware" href="javascript:;">All</a>
+        <a class="filters__filter" data-filter="desktop" href="javascript:;">Desktop</a>
+        <a class="filters__filter" data-filter="tablet" href="javascript:;">Tablet</a>
+        <a class="filters__filter" data-filter="phone" href="javascript:;">Phone</a>
+        <a class="filters__filter" data-filter="presentation" href="javascript:;">Presentation</a> 
+        <a class="filters__filter" data-filter="browser" href="javascript:;">Browser</a> 
+       </div>
+       <div class="filters__section">
+        <span class="filters__label">Blooms:</span>
+        <a class="filters__filter is-active" data-filter="all-blooms" href="javascript:;">All</a>
+        <a class="filters__filter" data-filter="remember" href="javascript:;">Remember</a>
+        <a class="filters__filter" data-filter="understand" href="javascript:;">Understand</a>
+        <a class="filters__filter" data-filter="apply" href="javascript:;">Apply</a> 
+        <a class="filters__filter" data-filter="analyse" href="javascript:;">Analyse</a>
+        <a class="filters__filter" data-filter="evaluate" href="javascript:;">Evaluate</a>
+        <a class="filters__filter" data-filter="create" href="javascript:;">Create</a> 
+       </div>
+  </nav>
   
-  <main id="cards" class="cards">
-    Cards go here
+  <main id="cards" class="cards tools all-hardware all-blooms">
+  
+
+    <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+  <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+      <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+      <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+      <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+      <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+      <div class="card tools remember tablet phone free fe">
+         <a href="#">
+          <img src="img/example.jpg"/>
+          <h2>Title</h2>
+          <p>Tagline</p>
+         </a>
+    </div>
+
+
   </main>
   
   <footer class="footer">
     <img class="footer__partner" src="img/example.jpg" />
-    <small class="footer__copyright>Some Copyright Message &copy;</small>
+    <img class="footer__partner" src="img/example.jpg" />
+    <img class="footer__partner" src="img/example.jpg" />
+    <img class="footer__partner" src="img/example.jpg" />
+    <img class="footer__partner" src="img/example.jpg" />
+    <img class="footer__partner" src="img/example.jpg" />
+    <small class="footer__copyright">Some Copyright Message &copy;</small>
   </footer>
   
 </body>
                   
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 <script src="js/blp.js"></script>
 </html>
