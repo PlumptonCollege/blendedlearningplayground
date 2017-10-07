@@ -123,8 +123,7 @@ font-size:0.9em;
 
 .card {
   width:12.6%;
-  display:block;
-  float:left;
+  display:inline-block;
   text-align: left;
   //background:white;
   //padding:1em;
